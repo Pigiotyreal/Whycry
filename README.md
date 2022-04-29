@@ -7,6 +7,8 @@ Simple ransomware in python
 - Make a folder named "img" and upload "wallpaper.png" as a 1920x1080 image, to give them a custom wallpaper with a ransom note
 - It also creates a text document with a note
 
+**DO NOT RUN THIS ON YOUR HOST PC**
+
 I may update this in the future but who knows
 
 Thanks wannacry for the idea <3
